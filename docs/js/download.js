@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", async () => {
   
     try {
       const res = await fetch(
-        `https://fallinorg-download.roccemagneta.workers.dev/get-download?session_id=${sessionId}`
+        `https://Floxtop-download.roccemagneta.workers.dev/get-download?session_id=${sessionId}`
       );
   
       if (!res.ok) {
@@ -35,9 +35,9 @@ document.addEventListener("DOMContentLoaded", async () => {
       // Update UI
       statusEl.textContent = "Your payment was verified!";
       downloadLink.href = url;
-      downloadLink.download = "Fallinorg-v1.0.0.zip";
+      downloadLink.download = "Floxtop-v1.0.0.zip";
       downloadLink.style.display = "inline-block";
-      downloadLink.textContent = "Download Fallinorg";
+      downloadLink.textContent = "Download Floxtop";
       
             // Hide loading spinner
       const loadingSpinner = document.getElementById("loading-spinner");

@@ -1,5 +1,5 @@
 /**
- * Fallinorg Website - Main JavaScript
+ * Floxtop Website - Main JavaScript
  * All interactive functionality for the homepage
  */
 
