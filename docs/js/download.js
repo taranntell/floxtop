@@ -15,7 +15,8 @@ document.addEventListener("DOMContentLoaded", async () => {
   
     try {
       const res = await fetch(
-        `https://Floxtop-download.roccemagneta.workers.dev/get-download?session_id=${sessionId}`
+        // Keep working fallinorg worker
+        `https://fallinorg-download.roccemagneta.workers.dev/get-download?session_id=${sessionId}`
       );
   
       if (!res.ok) {
