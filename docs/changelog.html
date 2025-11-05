@@ -300,10 +300,14 @@
                 <div class="col-lg-6 col-md-6">
                     <div class="footer-newsletter text-start">
                         <h4 class="type-s mb-3">Subscribe to our newsletter</h4>
-                        <form action="https://formspree.io/f/mrblyvnk" method="POST" class="newsletter-form">
+                        <form action="https://app.audienceful.com/api/subscribe/DQyutVMZq9oWME4nv5ANzr/" method="post" class="newsletter-form">
                             <div class="input-group mb-3">
-                                <input type="email" name="email" class="form-control form-control-md" placeholder="Enter your email address" required>
+                                <input type="email" name="email" id="email" class="form-control form-control-md" placeholder="Enter your email address" required>
                                 <button type="submit" class="btn btn-dark btn-md">Subscribe</button>
+                            </div>
+                            <!-- Honeypot field to block spambots -->
+                            <div style="position: absolute; left: -5000px;" aria-hidden="true">
+                                <input type="text" name="b28-ft" tabindex="-1" value="">
                             </div>
                         </form>
                     </div>
