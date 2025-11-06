@@ -444,6 +444,125 @@ body.has-navbar {
     color: var(--color-white);
 }
 
+.big-bar {
+      height: 10px;
+      width: 80%;
+      border-radius: 5px;
+      background-color: grey;
+    }
+
+    .small-bar {
+      height: 10px;
+      width: 7%;
+      border-radius: 5px;
+      background-color: var(--color-purple-secondary);
+    }
+
+/* Comparison Section Styles */
+.comparison-headline {
+  color: var(--color-black);
+  margin-bottom: 40px !important;
+}
+
+.comparison-column {
+  background-color: #F9F9F9;
+  border: 1px solid var(--color-border-light);
+  border-radius: var(--radius-lg);
+  padding: 35px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  transition: all var(--transition-normal) ease;
+}
+
+.comparison-column:hover {
+  border-color: var(--color-border-medium);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.comparison-column-floxtop {
+  background: linear-gradient(135deg, rgba(113, 78, 246, 0.05) 0%, rgba(113, 78, 246, 0.02) 100%);
+  border: 2px solid var(--color-purple-secondary);
+}
+
+.comparison-column-floxtop:hover {
+  border-color: var(--color-purple-secondary);
+  box-shadow: 0 4px 16px rgba(113, 78, 246, 0.15);
+}
+
+.comparison-column-header {
+  margin-bottom: 25px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.comparison-column-header p {
+  margin: 0;
+}
+
+.comparison-subtitle {
+  color: var(--color-gray-dark);
+  font-weight: 400 !important;
+  margin-top: 5px;
+}
+
+.comparison-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.comparison-list li {
+  position: relative;
+  margin-bottom: 15px;
+  padding-left: 25px;
+  color: var(--color-black);
+  line-height: 1.5;
+}
+
+.comparison-list li::before {
+  content: "→";
+  position: absolute;
+  left: 0;
+  color: var(--color-purple-secondary);
+  font-weight: bold;
+  font-size: 1.1em;
+}
+
+.comparison-column:not(.comparison-column-floxtop) .comparison-list li::before {
+  color: var(--color-gray-dark);
+}
+
+.comparison-conclusion {
+  color: var(--color-black);
+  line-height: 1.6;
+}
+
+/* Comparison Section Mobile Adjustments */
+@media (max-width: 768px) {
+  .comparison-column {
+    padding: 25px;
+  }
+
+  .comparison-column-header {
+    margin-bottom: 20px;
+    padding-bottom: 12px;
+  }
+
+  .comparison-list li {
+    margin-bottom: 12px;
+    padding-left: 20px;
+    font-size: 0.95rem;
+  }
+
+  .comparison-headline {
+    margin-bottom: 30px !important;
+  }
+
+  .comparison-conclusion {
+    font-size: 1rem;
+  }
+}
+
 /* Hero section with gradient */
 #hero {
     background-color: var(--color-white);
@@ -1813,6 +1932,18 @@ a.btn-presale:active,
         margin-bottom: 10px;
         line-height: 1.5;
     }
+}
+
+/* Testimonials - Social Proof Cards */
+#testimonials .row {
+  display: flex;
+  align-items: flex-start;
+}
+
+.socialproof-card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
 
 /* Footer Styles */
