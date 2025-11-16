@@ -23,6 +23,28 @@
     <!-- Favicon -->
     <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png">
+
+    <!-- Breadcrumb Schema (Schema.org) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://floxtop.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Changelog",
+          "item": "https://floxtop.com/changelog.html"
+        }
+      ]
+    }
+    </script>
 </head>
 <body class="has-navbar">
     <!-- Navigation -->
@@ -288,7 +310,7 @@
             <div class="container">
             <div class="row justify-content-center text-center mb-3">
                 <div class="col-lg-8">
-                    <img src="assets/logo.png" alt="Floxtop logo" class="mb-4 logo-medium">
+                    <img src="assets/logo.png" alt="Floxtop - AI-powered Mac file organizer logo" class="mb-4 logo-medium">
                     <h2 class="type-l fw-bold">Floxtop Pro</h2>
                     <p class="type-m mb-1">Available for $19.99 USD one-time.</p>
                     <div class="container">
