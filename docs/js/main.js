@@ -61,6 +61,7 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 // Category button selection
+// Category button selection
 document.addEventListener('DOMContentLoaded', function() {
     document.querySelectorAll('.category-button').forEach(btn => {
         btn.onclick = function() {
@@ -86,5 +87,20 @@ document.addEventListener('DOMContentLoaded', function() {
             document.querySelectorAll('.category-button-circle').forEach(c => c.remove());
             document.getElementById('selectedCategory').textContent = 'Choose Other Folder';
         };
+    }
+});
+
+// Close navbar collapse when clicking outside
+document.addEventListener('click', function(event) {
+    const navbarCollapse = document.getElementById('navbarNav');
+    const navbarToggler = document.querySelector('.navbar-toggler');
+    
+    // Check if navbar collapse exists and is shown
+    if (navbarCollapse && navbarCollapse.classList.contains('show')) {
+        // Check if click is outside both the navbar collapse and the toggler button
+        if (!navbarCollapse.contains(event.target) && !navbarToggler.contains(event.target)) {
+            // Programmatically click the toggler button to close
+            navbarToggler.click();
+        }
     }
 });
