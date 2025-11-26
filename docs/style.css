@@ -1242,27 +1242,37 @@ span.category-path-arrow,
 }
 
 .category-button {
-    background-color: var(--color-bg-light);
-    border: 1px solid var(--color-border-light);
+    background-color: rgba(0, 0, 0, 0.05);
+    border: 1px solid transparent;
     border-radius: var(--radius-sm);
-    padding: 0px 16px;
+    padding: 4px 8px;
     display: flex;
     align-items: center;
     cursor: pointer;
-    transition: gap var(--transition-fast);
+    transition: all var(--transition-fast);
+}
+
+.category-button.active {
+    background-color: rgba(52, 120, 247, 0.15);
+    border: 1px solid var(--color-blue-accent);
+}
+
+.category-button:hover {
+    background-color: rgba(0, 0, 0, 0.08);
+}
+
+.category-button.active:hover {
+    background-color: rgba(52, 120, 247, 0.2);
 }
 
 .category-button-text {
     color: var(--color-black);
-    font-size: 14px;
+    font-size: 12px;
+    line-height: 1;
 }
 
-.category-button-circle {
-    width: 8px;
-    height: 8px;
-    background-color: var(--color-blue-accent);
-    border-radius: var(--radius-circle);
-    margin-right: 8px;
+.category-button.active .category-button-text {
+    color: var(--color-blue-accent);
 }
 
 .category-plus-button {

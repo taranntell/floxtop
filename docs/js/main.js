@@ -61,20 +61,16 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 // Category button selection
-// Category button selection
 document.addEventListener('DOMContentLoaded', function() {
     document.querySelectorAll('.category-button').forEach(btn => {
         btn.onclick = function() {
-            // Remove circles from all buttons
+            // Remove active class from all buttons
             document.querySelectorAll('.category-button').forEach(b => {
-                const circle = b.querySelector('.category-button-circle');
-                if (circle) circle.remove();
+                b.classList.remove('active');
             });
 
-            // Add circle to clicked button
-            const circle = document.createElement('span');
-            circle.className = 'category-button-circle';
-            this.insertBefore(circle, this.firstChild);
+            // Add active class to clicked button
+            this.classList.add('active');
 
             document.getElementById('selectedCategory').textContent = this.dataset.category;
         };
@@ -84,7 +80,9 @@ document.addEventListener('DOMContentLoaded', function() {
     const plusButton = document.getElementById('plusButton');
     if (plusButton) {
         plusButton.onclick = function() {
-            document.querySelectorAll('.category-button-circle').forEach(c => c.remove());
+            document.querySelectorAll('.category-button').forEach(b => {
+                b.classList.remove('active');
+            });
             document.getElementById('selectedCategory').textContent = 'Choose Other Folder';
         };
     }
