@@ -532,10 +532,11 @@
                                 <h3 class="type-m fw-bold mb-2">Floxtop Free</h3>
                                 <span class="price">$0</span>
                                 <span class="price-period">Free</span>
+                                <p class="type-xs mt-2 mb-0" style="opacity: 0.7;">No credit card or email required</p>
                             </div>
                         </div>
 
-                        <div class="features-list">
+                        <div class="features-list free-features-spacing">
                             <div class="feature-item type-xs"><i class="bi bi-check-circle-fill" style="color:#7F7F7F;"></i> Handle 50 files per month</div>
                             <div class="feature-item type-xs"><i class="bi bi-check-circle-fill"></i> Supports 30+ formats including Images, Word, Excel, PowerPoint, PDF, EPUB, and RTF</div>
                             <div class="feature-item type-xs"><i class="bi bi-check-circle-fill"></i> Supports file classification in 50 languages. English, German, French, Spanish and more.</div>
@@ -543,7 +544,7 @@
                             <div class="feature-item type-xs"><i class="bi bi-check-circle-fill"></i> Organize files and folders in cloud storage (iCloud Drive, Google Drive, OneDrive, Dropbox)</div>
                             <div class="feature-item type-xs"><i class="bi bi-check-circle-fill"></i> 100% private and fully offline</div>
                         </div>                       
-                        <p class="small mt-2 pricing-text-dark">No credit card required.<br/>Requires macOS 15+ with Apple Silicon.</p>
+                        <p class="small mt-2 pricing-text-dark">Requires macOS 15+ with Apple Silicon.</p>
                         <div class="download-section">
                             <a type="button" class="btn btn-presale btn-lg" href="https://pub-a80e0e01ccee4148a4f4c43d8d4eeda2.r2.dev/Floxtop-v1.4.0-demo.zip">Download Free</a> 
                        </div>
@@ -555,9 +556,19 @@
                     <div class="pricing-card">
                         <div class="pricing-header">
                             <div class="price-display">
-                                <h3 class="type-m fw-bold mb-2">Floxtop Pro</h3>
-                                <span class="price">$19.99</span>
+                                <h3 class="type-m fw-bold mb-2" id="proTitle">Floxtop Pro</h3>
+                                
+                                <!-- License Pack Selector -->
+                                <div class="license-selector" role="tablist" aria-label="Select license pack">
+                                    <button class="license-option active" data-pack="1" data-price="19.99" data-url="https://buy.stripe.com/5kQ00ka1MeLubOFdD59R605" role="tab" aria-selected="true">1x</button>
+                                    <button class="license-option" data-pack="2" data-price="29.99" data-url="https://buy.stripe.com/8x26oI0rc9ra9GxbuX9R606" data-save="25" role="tab" aria-selected="false">2x</button>
+                                    <button class="license-option" data-pack="3" data-price="39.99" data-url="https://buy.stripe.com/00w6oI3Dobzi4mdfLd9R607" data-save="33" role="tab" aria-selected="false">3x</button>
+                                    <button class="license-option" data-pack="5" data-price="44.99" data-url="https://buy.stripe.com/cNi6oI8XIbzig4V0Qj9R608" data-save="55" role="tab" aria-selected="false">5x</button>
+                                </div>
+                                
+                                <span class="price" id="proPrice">$19.99</span>
                                 <span class="price-period">USD one-time</span>
+                                <span class="save-badge" id="saveBadge" style="display: none;"></span>
                                 <p class="type-xs">30-day refund guarantee</p>
                             </div>
                         </div>
@@ -578,7 +589,7 @@
                         </p>
 
                         <div class="download-section">
-                            <a type="button" class="btn btn-presale btn-lg" href="https://buy.stripe.com/5kQ00ka1MeLubOFdD59R605">Get Pro</a>
+                            <a type="button" class="btn btn-presale btn-lg" id="proButton" href="https://buy.stripe.com/5kQ00ka1MeLubOFdD59R605">Get Pro</a>
                         </div>
                     </div>
                 </div>
@@ -700,14 +711,15 @@
                             </h2>
                             <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionFAQ">
                                 <div class="accordion-body type-xs">
-                                    <strong>File Types:</strong> Floxtop supports 30+ file types including:<br/><br/>
+                                    <strong>File Types:</strong> Floxtop works with all file types. Supported formats are classified by content analysis, while other files are classified by filename.<br/><br/>
+                                    <strong>Content-analyzed formats (30+):</strong><br/>
                                     <strong>Documents:</strong> TXT, PDF, MD (Markdown), RTF, HTML, EPUB, DOC, DOCX<br/>
                                     <strong>Spreadsheets:</strong> CSV, TSV, XLSX, XLSM, XLTX, XLTM<br/>
                                     <strong>Presentations:</strong> PPTX, PPTM, POTX, POTM<br/>
                                     <strong>Data & Config:</strong> JSON, XML, YAML, TOML, INI, CONF, LOG<br/>
                                     <strong>Images:</strong> PNG, JPG, JPEG, HEIC, HEIF, TIFF, TIF, BMP, WEBP<br/>
                                     <strong>Archives:</strong> ZIP<br/><br/>
-                                    All processing happens locally on your Mac with OCR support for images.<br/><br/>
+                                    All other file types are classified based on their filename. All processing happens locally on your Mac with OCR support for images.<br/><br/>
                                     <strong>Languages:</strong> Floxtop supports 50 languages including English, Spanish, French, German, Italian, Portuguese, Dutch, Swedish, Norwegian, Danish, Finnish, Polish, Czech, Romanian, Hungarian, Croatian, Bulgarian, Serbian, Slovak, Slovenian, Greek, Russian, Ukrainian, Turkish, Estonian, Latvian, Lithuanian, Macedonian, Albanian, Catalan, Galician, Japanese, Korean, Vietnamese, Thai, Indonesian, Malay, Burmese, Mongolian, Arabic, Hebrew, Persian, Urdu, Hindi, Gujarati, Marathi, Georgian, Armenian, and Kurdish. Download the multilingual model in Settings to enable support for all languages.
                                 </div>
                             </div>
@@ -869,7 +881,7 @@
                         </div>
 
                         <div class="footer-bottom">
-                            <p class="footer-copyright type-xs">Copyright © 2025. All rights reserved.</p>
+                            <p class="footer-copyright type-xs">Copyright © 2026. All rights reserved.</p>
                         </div>
                     </div>
                 </div>

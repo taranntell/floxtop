@@ -102,3 +102,50 @@ document.addEventListener('click', function(event) {
         }
     }
 });
+
+// License pack selector
+document.addEventListener('DOMContentLoaded', function() {
+    const options = document.querySelectorAll('.license-option');
+    const priceEl = document.getElementById('proPrice');
+    const saveEl = document.getElementById('saveBadge');
+    const buttonEl = document.getElementById('proButton');
+    const titleEl = document.getElementById('proTitle');
+
+    if (!options.length || !priceEl || !saveEl || !buttonEl || !titleEl) return;
+
+    options.forEach(option => {
+        option.addEventListener('click', function() {
+            // Update active state
+            options.forEach(opt => {
+                opt.classList.remove('active');
+                opt.setAttribute('aria-selected', 'false');
+            });
+            this.classList.add('active');
+            this.setAttribute('aria-selected', 'true');
+
+            // Update price, URL, and title
+            const pack = this.dataset.pack;
+            const price = this.dataset.price;
+            const url = this.dataset.url;
+            const save = this.dataset.save;
+
+            priceEl.textContent = '$' + price;
+            buttonEl.href = url;
+
+            // Update title
+            if (pack === '1') {
+                titleEl.textContent = 'Floxtop Pro';
+            } else {
+                titleEl.textContent = 'Floxtop Pro ' + pack + '-Pack';
+            }
+
+            // Show/hide save badge
+            if (save) {
+                saveEl.textContent = 'Save ' + save + '%';
+                saveEl.style.display = 'inline-block';
+            } else {
+                saveEl.style.display = 'none';
+            }
+        });
+    });
+});
