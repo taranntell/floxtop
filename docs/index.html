@@ -97,7 +97,7 @@
         }
     ],
 
-    "description": "AI-powered file organizer and renaming tool for Mac. Automatically organizes files and suggests intelligent filenames using Apple Intelligence. Works with files and folders in over 50 languages, including Spanish, French, German, and Japanese. Supports iCloud Drive, Google Drive, OneDrive, and Dropbox. Fully offline and privacy-focused."
+    "description": "AI-powered file organizer and renaming tool for Mac. Automatically organizes files and suggests intelligent filenames using local AI. Works with files and folders in over 50 languages, including Spanish, French, German, and Japanese. Supports iCloud Drive, Google Drive, OneDrive, and Dropbox. Fully offline and privacy-focused."
     }
     </script>
 
@@ -114,6 +114,14 @@
           "acceptedAnswer": {
             "@type": "Answer",
             "text": "Floxtop uses an AI model to understand your file content locally on your Mac. It then classifies, suggests and sorts files into meaningful folders based on available categories and their content."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How does smart file renaming work?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Smart file renaming uses advanced on-device AI to analyze your file's content and suggest clear, descriptive filenames. For example, it can turn 'Untitle.pdf' into 'Aurora_Q4-2026_Sales_Report.pdf' or 'Screenshot 2026-01-31.png' into 'TravelTickets_PurchaseConfirmation_2026-01-31.png'. Requirements: macOS 26.0 (Tahoe) or later with Apple Intelligence enabled in System Settings → Apple Intelligence & Siri. Everything runs entirely on your Mac—no data is ever sent to external servers. If your Mac doesn't meet these requirements, you can still use all other Floxtop features normally."
           }
         },
         {
@@ -141,22 +149,14 @@
           }
         },
         {
-            "@type": "Question",
-            "name": "What file types does Floxtop support?",
-            "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "Floxtop supports 30+ file types including Documents (TXT, PDF, DOC, DOCX, MD, RTF, HTML, EPUB), Spreadsheets (CSV, XLSX, XLSM), Presentations (PPTX, PPTM), Data files (JSON, XML, YAML), Images (PNG, JPG, HEIC, TIFF, WEBP), and Archives (ZIP). All processing happens locally on your Mac with OCR support for images."
-            }
+          "@type": "Question",
+          "name": "What file types and languages are supported?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "File Types: Floxtop works with all file types. Supported formats are classified by content analysis, while other files are classified by filename. Content-analyzed formats (30+): Documents (TXT, PDF, MD, RTF, HTML, EPUB, DOC, DOCX), Spreadsheets (CSV, TSV, XLSX, XLSM, XLTX, XLTM), Presentations (PPTX, PPTM, POTX, POTM), Data & Config (JSON, XML, YAML, TOML, INI, CONF, LOG), Images (PNG, JPG, JPEG, HEIC, HEIF, TIFF, TIF, BMP, WEBP), Archives (ZIP). All other file types are classified based on their filename. All processing happens locally on your Mac with OCR support for images. Languages: Floxtop supports 50 languages including English, Spanish, French, German, Italian, Portuguese, Dutch, Swedish, Norwegian, Danish, Finnish, Polish, Czech, Romanian, Hungarian, Croatian, Bulgarian, Serbian, Slovak, Slovenian, Greek, Russian, Ukrainian, Turkish, Estonian, Latvian, Lithuanian, Macedonian, Albanian, Catalan, Galician, Japanese, Korean, Vietnamese, Thai, Indonesian, Malay, Burmese, Mongolian, Arabic, Hebrew, Persian, Urdu, Hindi, Gujarati, Marathi, Georgian, Armenian, and Kurdish. Download the multilingual model in Settings to enable support for all languages."
+          }
         },
         {
-            "@type": "Question",
-            "name": "What languages does Floxtop support?",
-            "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "Floxtop supports 50 languages including English, Spanish, French, German, Italian, Portuguese, Japanese, Hindi, Arabic and many more. You can create categories in any language and mix multiple languages in the same category. Download the multilingual model in Settings to enable all languages."
-            }
-        },
-       {
           "@type": "Question",
           "name": "Can I choose where files are organized?",
           "acceptedAnswer": {
@@ -194,6 +194,14 @@
           "acceptedAnswer": {
             "@type": "Answer",
             "text": "Yes! Floxtop Pro includes all updates: bug fixes, performance improvements, and feature enhancements—at no extra cost. Major upgrades or entirely new versions may require a new license, following the standard desktop app model. This ensures your app keeps improving while your current license remains valid."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How many Macs can I use with one license?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Each license covers one Mac, not one user. So if you want Floxtop on 3 different Macs, you'll need 3 licenses. We offer multi-license packs with significant discounts. The number of licenses can be selected directly from the pricing section."
           }
         },
         {
@@ -418,7 +426,7 @@
                     <div class="feature-card d-flex align-items-start">
                         <div class="feature-card-content">
                             <h3 class="type-s fw-bold mb-3 feature-card-green-text">Smart File Renaming</h3>
-                            <p class="type-s feature-card-green-text">Transform cryptic filenames like "IMG_1234.jpg" or "Screenshot 2026-01-31.png" into descriptive names based on actual content—like "Travel Tickets 31-01-2026.jpg" or "Q4 Sales Report.png". Runs entirely on your Mac using advanced on-device AI.<br/>Private, secure, offline.<br/><br/><small class="text-muted">Requires macOS 26.0+ with system AI features enabled.</small></p>
+                            <p class="type-s feature-card-green-text">Transform cryptic filenames like "IMG_1234.jpg" or "Screenshot 2026-01-31.png" into descriptive names based on actual content—like "Untitle.pdf" to "Aurora_Q4-2026_Sales_Report.pdf" or "Screenshot 2026-01-31.png" to "TravelTickets_PurchaseConfirmation_2026-01-31.png". Runs entirely on your Mac using advanced on-device AI.<br/>Private, secure, offline.<br/><br/><small class="text-muted">Requires macOS 26.0+ with system AI features enabled.</small></p>
                         </div>
                     </div>
                 </div>
@@ -723,6 +731,25 @@
                         </div>
                         
                         <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingAIRename">
+                                <button class="accordion-button type-xs collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseAIRename" aria-expanded="false" aria-controls="collapseAIRename">
+                                   How does smart file renaming work?
+                                </button>
+                            </h2>
+                            <div id="collapseAIRename" class="accordion-collapse collapse" aria-labelledby="headingAIRename" data-bs-parent="#accordionFAQ">
+                                <div class="accordion-body type-xs">
+                                    Smart file renaming uses advanced on-device AI to analyze your file's content and suggest clear, descriptive filenames. For example, it can turn "Untitle.pdf" into "Aurora_Q4-2026_Sales_Report.pdf" or "Screenshot 2026-01-31.png" into "TravelTickets_PurchaseConfirmation_2026-01-31.png".<br/><br/>
+                                    
+                                    <strong>Requirements:</strong><br/>
+                                    • macOS 26.0 (Tahoe) or later<br/>
+                                    • Apple Intelligence enabled in System Settings → Apple Intelligence & Siri<br/><br/>
+                                    
+                                    Everything runs entirely on your Mac—no data is ever sent to external servers. If your Mac doesn't meet these requirements, you can still use all other Floxtop features normally.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
                             <h2 class="accordion-header" id="headingTwo">
                                 <button class="accordion-button type-xs collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
                                     Is my data private and secure?
@@ -869,25 +896,6 @@
                             <div id="collapseLicense" class="accordion-collapse collapse" aria-labelledby="headingLicense" data-bs-parent="#accordionFAQ">
                                 <div class="accordion-body type-xs">
                                     Each license covers one Mac, not one user. So if you want Floxtop on 3 different Macs, you'll need 3 licenses. We offer multi-license packs with significant discounts. The number of licenses can be selected directly from the <a href="#pricing" class="text-dark">pricing section</a>.
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="accordion-item">
-                            <h2 class="accordion-header" id="headingAIRename">
-                                <button class="accordion-button type-xs collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseAIRename" aria-expanded="false" aria-controls="collapseAIRename">
-                                   How does smart file renaming work?
-                                </button>
-                            </h2>
-                            <div id="collapseAIRename" class="accordion-collapse collapse" aria-labelledby="headingAIRename" data-bs-parent="#accordionFAQ">
-                                <div class="accordion-body type-xs">
-                                    Smart file renaming uses advanced on-device AI to analyze your file's content and suggest clear, descriptive filenames. For example, it can turn "IMG_5847.jpg" into "Golden Gate Bridge Sunset.jpg" or "Screenshot 2026-01-18.png" into "Q4 Sales Report.png".<br/><br/>
-                                    
-                                    <strong>Requirements:</strong><br/>
-                                    • macOS 26.0 (Tahoe) or later<br/>
-                                    • Apple Intelligence enabled in System Settings → Apple Intelligence & Siri<br/><br/>
-                                    
-                                    Everything runs entirely on your Mac—no data is ever sent to external servers. If your Mac doesn't meet these requirements, you can still use all other Floxtop features normally.
                                 </div>
                             </div>
                         </div>
