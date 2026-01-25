@@ -2136,3 +2136,268 @@ footer.footer .footer-copyright {
 }
 
 
+/* ========================================
+   AI PROCESS VISUAL SECTION
+   ======================================== */
+
+.ai-process-visual {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    padding: 3rem 1rem;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+.process-step {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.process-arrow {
+    font-size: 2rem;
+    color: var(--color-purple-secondary);
+    padding: 0 1rem;
+}
+
+.process-box {
+    background: var(--color-white);
+    border: 2px solid var(--color-gray-medium);
+    border-radius: var(--radius-lg);
+    padding: 1.5rem;
+}
+
+.process-box.file:not(.ai-card-box) {
+    width: 320px;
+    height: 428px;
+    border: none;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease;
+}
+
+.process-box.file:not(.ai-card-box):hover {
+    transform: translateY(-5px);
+}
+
+.file-name {
+    font-weight: normal;
+    margin-bottom: 1rem;
+    color: var(--color-black);
+    text-align: left;
+}
+
+.process-title-container {
+    width: 100%;
+    text-align: left;
+}
+
+.process-title {
+    text-align: left;
+    color: var(--color-black);
+}
+
+.title-break {
+    display: none;
+}
+
+.file-name {
+    text-align: left;
+    width: 100%;
+}
+
+.process-box.folders {
+    min-width: 180px;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.content-block {
+    display: flex;
+    height: 14px;
+    margin: 10px 0;
+    border-radius: 4px;
+    gap: 4px;
+}
+
+.content-block.full,
+.content-block.short {
+    background: var(--color-gray-medium);
+}
+
+.content-block.short {
+    width: 60%;
+}
+
+.segment {
+    flex: 1;
+    background: var(--color-gray-medium);
+    border-radius: 4px;
+}
+
+.segment.highlight {
+    background: var(--color-purple-light);
+}
+
+.image-content {
+    width: 100%;
+    height: 70px;
+    margin: 12px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.content-shapes {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.ai-cards-container {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.process-box.ai-card-box {
+    width: 440px;
+    max-width: 100%;
+    height: auto;
+    padding: 0.75rem;
+    border: none;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    text-align: left;
+    transition: transform 0.3s ease;
+}
+
+.process-box.ai-card-box:hover {
+    transform: translateY(-5px);
+}
+
+.process-box.ai-card-box.highlighted-card {
+    background: linear-gradient(135deg, rgba(113, 78, 246, 0.05) 0%, rgba(113, 78, 246, 0.02) 100%);
+}
+
+.ai-card-label {
+    font-weight: 600;
+    font-size: 0.7rem;
+    margin-bottom: 0.5rem;
+    color: var(--color-black);
+    text-align: left;
+}
+
+.folder-item {
+    padding: 0.75rem 1rem;
+    background: var(--color-white);
+    border: 2px solid var(--color-gray-medium);
+    border-radius: var(--radius-md);
+    text-align: center;
+}
+
+.folder-item.matched {
+    background: #CAE4CA;
+    border-color: #7FB77F;
+    font-weight: 600;
+}
+
+.benefits-grid {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    flex-wrap: wrap;
+}
+
+.benefit-item {
+    text-align: center;
+    max-width: 150px;
+}
+
+.benefit-icon {
+    font-size: 2.5rem;
+    display: block;
+    margin-bottom: 0.75rem;
+}
+
+@media (max-width: 992px) {
+    .ai-process-visual {
+        gap: 1rem;
+        padding: 2rem 1rem;
+    }
+
+    .process-box.file:not(.ai-card-box) {
+        width: 240px;
+    }
+
+    .process-box.ai-card-box {
+        width: 320px;
+    }
+}
+
+@media (max-width: 768px) {
+    .ai-process-visual {
+        flex-direction: column;
+        gap: 1.5rem;
+        padding: 2rem 1rem;
+    }
+
+    .process-arrow {
+        transform: rotate(90deg);
+    }
+
+    .process-box.file:not(.ai-card-box),
+    .process-box.ai-card-box {
+        width: 100%;
+        max-width: min(320px, calc(100vw - 2rem));
+    }
+
+    .process-title-container {
+        max-width: min(320px, calc(100vw - 2rem));
+    }
+
+    .process-box.folders {
+        min-width: 200px;
+    }
+
+    .benefits-grid {
+        gap: 2rem;
+    }
+}
+@media (max-width: 480px) {
+    .process-box.file:not(.ai-card-box),
+    .process-box.ai-card-box {
+        max-width: 280px;
+        padding: 1rem;
+    }
+
+    .ai-process-visual {
+        padding: 1.5rem 0.5rem;
+    }
+
+    .process-title {
+        font-size: 0.85rem;
+    }
+
+    .title-break {
+        display: inline;
+    }
+
+    .file-name {
+        max-width: 280px;
+        text-align: left;
+    }
+
+    .content-block {
+        height: 12px;
+        margin: 8px 0;
+    }
+
+    .ai-cards-container {
+        gap: 0.5rem;
+    }
+}
