@@ -4,11 +4,11 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="canonical" href="https://floxtop.com/">
-    <title>Floxtop — AI File Organizer & Rename for Mac</title>
+    <title>Floxtop — Clean up your Mac in one click.</title>
     <meta name="theme-color" content="#ffffff">
-    <meta name="description" content="AI-powered Mac file organizer with smart renaming. Automatically sorts files by content and suggests intelligent filenames. Supports 50+ languages. 100% private, offline, no subscriptions.">
+    <meta name="description" content="Floxtop is an AI-powered file organizer for Mac that automatically sorts your files in one click. Works offline with complete privacy. Supports 30+ file formats and 50 languages.">
     <meta property="og:title" content="Floxtop — Clean up your Mac in one click.">
-    <meta property="og:description" content="AI-powered file organizer for Mac with smart renaming. Automatically sorts files by content and suggests meaningful filenames. 100% private and offline.">
+    <meta property="og:description" content="AI-powered file organization for your Mac. Fast, private, offline. Now with multilingual support for 50 languages.">
     <meta property="og:image" content="https://floxtop.com/assets/og-image.png?v=2">
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
@@ -44,73 +44,42 @@
     <!-- Structured Data (Schema.org) -->
     <script type="application/ld+json">
     {
-    "@context": "https://schema.org",
-    "@type": "SoftwareApplication",
-    "name": "Floxtop",
-    "applicationCategory": "UtilitiesApplication",
-    "operatingSystem": "macOS 15+",
-    "offers": {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "Floxtop",
+      "applicationCategory": "UtilitiesApplication",
+      "operatingSystem": "macOS 15+",
+      "offers": {
         "@type": "Offer",
         "price": "19.99",
         "priceCurrency": "USD"
-    },
-    "review": [
+      },
+      "review": [
         {
-        "@type": "Review",
-        "author": {
-            "@type": "Organization",
-            "name": "iPhon.fr"
-        },
-        "reviewBody": "Floxtop goes further than other file-organizing tools by analyzing the actual content of documents rather than relying on file names or extensions. By using on-device AI and OCR, it automatically organizes files more effectively — all while keeping your data private by running entirely locally.",
-        "datePublished": "2026-01-15",
-        "url": "https://www.iphon.fr/post/floxtop-application-mac-menage"
-        },
-        {
-        "@type": "Review",
-        "author": {
-            "@type": "Organization",
-            "name": "AppAddict.com"
-        },
-        "reviewBody": "Floxtop offers a better solution than manual sorting or Hazel rules. It uses on-device AI to analyze files and group them into related subfolders instantly, saving me from creating manual rules. It recognizes both text and images and gives you a chance to review everything before applying changes. That balance between automation and control makes the results easy to trust.",
-        "datePublished": "2026-01-04",
-        "url": "https://appaddict.app/post/some-useful-single-purpose-apps"
-        },
-        {
-        "@type": "Review",
-        "author": {
-            "@type": "Person",
-            "name": "Silvan K"
-        },
-        "reviewBody": "Floxtop feels very promising and has already helped me manage my files better than other tools I've tried.",
-        "datePublished": "2025-12-09",
-        "url": "https://floxtop.com/#testimonials"
-        },
-        {
-        "@type": "Review",
-        "author": {
+          "@type": "Review",
+          "author": {
             "@type": "Person",
             "name": "Hacker News User"
-        },
-        "reviewBody": "I've tried everything from Hazel to custom scripts. Nothing handles organization as elegantly as Floxtop.",
-        "datePublished": "2025-12-06",
-        "url": "https://news.ycombinator.com/item?id=44932375"
+          },
+          "reviewBody": "I've tried everything from Hazel to custom scripts. Nothing handles organization as elegantly as Floxtop.",
+          "datePublished": "2025-12-06",
+          "url": "https://news.ycombinator.com/item?id=44932375"
         },
         {
-        "@type": "Review",
-        "author": {
+          "@type": "Review",
+          "author": {
             "@type": "Person",
             "name": "Hacker News User"
-        },
-        "reviewBody": "I bought it immediately. This solves a problem I deal with every day.",
-        "datePublished": "2025-12-01",
-        "url": "https://news.ycombinator.com/item?id=45420381"
+          },
+          "reviewBody": "I bought it immediately. This solves a problem I deal with every day.",
+          "datePublished": "2025-12-01",
+          "url": "https://news.ycombinator.com/item?id=45420381"
         }
-    ],
+      ],
 
-    "description": "AI-powered file organizer for Mac with smart renaming. Automatically organizes files by content and suggests clear, descriptive filenames based on what's inside. Supports 50+ languages including English, Spanish, French, German, Japanese, and Hindi. Works with iCloud Drive, Google Drive, OneDrive, and Dropbox. 100% private, offline, and secure."
+      "description": "AI-powered file organizer for Mac that organizes files and folders in over 50 languages, including Spanish, French, German, and Japanese. Supports iCloud Drive, Google Drive, OneDrive, and Dropbox. Fully offline and privacy-focused."
     }
     </script>
-
 
     <!-- FAQ Schema (Schema.org) -->
     <script type="application/ld+json">
@@ -124,14 +93,6 @@
           "acceptedAnswer": {
             "@type": "Answer",
             "text": "Floxtop uses an AI model to understand your file content locally on your Mac. It then classifies, suggests and sorts files into meaningful folders based on available categories and their content."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "How does Smart Rename work?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Smart Rename analyzes your file's content and suggests clear, descriptive filenames. For example, 'Screenshot 2026-01-31.png' becomes 'Flight Tickets Confirmation.png'. Requirements: macOS 26.0 or later with Apple Intelligence enabled (System Settings → Apple Intelligence & Siri). Everything runs on your Mac—no data ever leaves your device. If your Mac doesn't meet these requirements, you can still use all other Floxtop features normally."
           }
         },
         {
@@ -159,14 +120,22 @@
           }
         },
         {
-          "@type": "Question",
-          "name": "What file types and languages are supported?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "File Types: Floxtop works with all file types. Supported formats are classified by content analysis, while other files are classified by filename. Content-analyzed formats (30+): Documents (TXT, PDF, MD, RTF, HTML, EPUB, DOC, DOCX), Spreadsheets (CSV, TSV, XLSX, XLSM, XLTX, XLTM), Presentations (PPTX, PPTM, POTX, POTM), Data & Config (JSON, XML, YAML, TOML, INI, CONF, LOG), Images (PNG, JPG, JPEG, HEIC, HEIF, TIFF, TIF, BMP, WEBP), Archives (ZIP). All other file types are classified based on their filename. All processing happens locally on your Mac with OCR support for images. Languages: Floxtop supports 50 languages including English, Spanish, French, German, Italian, Portuguese, Dutch, Swedish, Norwegian, Danish, Finnish, Polish, Czech, Romanian, Hungarian, Croatian, Bulgarian, Serbian, Slovak, Slovenian, Greek, Russian, Ukrainian, Turkish, Estonian, Latvian, Lithuanian, Macedonian, Albanian, Catalan, Galician, Japanese, Korean, Vietnamese, Thai, Indonesian, Malay, Burmese, Mongolian, Arabic, Hebrew, Persian, Urdu, Hindi, Gujarati, Marathi, Georgian, Armenian, and Kurdish. Download the multilingual model in Settings to enable support for all languages."
-          }
+            "@type": "Question",
+            "name": "What file types does Floxtop support?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Floxtop supports 30+ file types including Documents (TXT, PDF, DOC, DOCX, MD, RTF, HTML, EPUB), Spreadsheets (CSV, XLSX, XLSM), Presentations (PPTX, PPTM), Data files (JSON, XML, YAML), Images (PNG, JPG, HEIC, TIFF, WEBP), and Archives (ZIP). All processing happens locally on your Mac with OCR support for images."
+            }
         },
         {
+            "@type": "Question",
+            "name": "What languages does Floxtop support?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Floxtop supports 50 languages including English, Spanish, French, German, Italian, Portuguese, Japanese, Hindi, Arabic and many more. You can create categories in any language and mix multiple languages in the same category. Download the multilingual model in Settings to enable all languages."
+            }
+        },
+       {
           "@type": "Question",
           "name": "Can I choose where files are organized?",
           "acceptedAnswer": {
@@ -204,14 +173,6 @@
           "acceptedAnswer": {
             "@type": "Answer",
             "text": "Yes! Floxtop Pro includes all updates: bug fixes, performance improvements, and feature enhancements—at no extra cost. Major upgrades or entirely new versions may require a new license, following the standard desktop app model. This ensures your app keeps improving while your current license remains valid."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "How many Macs can I use with one license?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Each license covers one Mac, not one user. So if you want Floxtop on 3 different Macs, you'll need 3 licenses. We offer multi-license packs with significant discounts. The number of licenses can be selected directly from the pricing section."
           }
         },
         {
@@ -278,7 +239,7 @@
       "@context": "https://schema.org",
       "@type": "ImageObject",
       "contentUrl": "https://floxtop.com/assets/hero.webp",
-      "description": "Floxtop Mac app interface showing automatic file organization and file renaming with private AI"
+      "description": "Floxtop Mac app interface showing automatic file organization"
     }
     </script>
 </head>
@@ -324,14 +285,14 @@
                     <div class="col-lg-10">
                         <picture>
                             <source media="(max-width: 987px)" srcset="assets/hero_smalldisplays.webp">
-                            <img src="assets/hero.webp" alt="Floxtop Mac app interface showing automatic file organization and file renaming with private AI" class="img-fluid hero-image">
+                            <img src="assets/hero.webp" alt="Floxtop Mac app interface showing automatic file organization with AI-powered categorization" class="img-fluid hero-image">
                         </picture>
                     </div>
                 </div>
                 <div class="row justify-content-center text-center mt-5">
                     <div class="col-lg-8">
                         <p class="type-m">
-                        Floxtop uses private, on-device AI to organize files by understanding their content—and automatically suggests clear, meaningful filenames when you need them.
+                        Floxtop uses private, on-device AI to organize files by understanding your content in 50+ languages across local folders and cloud drives — helping you bring chaos under control.
                         </p>
                    </div>
                 </div>
@@ -354,7 +315,7 @@
                 <div class="col-lg-8">
                     <p class="type-s fw-bold mb-4 text-uppercase">FEATURES</p>
                     <h2 class="type-xl fw-bold">Built to help you focus</h2>
-                    <p class="type-m mb-1">Unlike other tools, Floxtop uses private, on-device AI to organize files by understanding what they contain—not just their filenames. It also suggests clear, meaningful filenames automatically based on content.</p>
+                    <p class="type-m mb-1">Unlike other tools, Floxtop organizes your files with local AI that understands what they are — not just what they’re called.</p>
                 </div>
             </div>
 
@@ -372,9 +333,9 @@
                     <div class="feature-card d-flex align-items-start flex-column">
                         <div class="feature-card-content">
                             <h3 class="type-s fw-bold mb-3">Multi-Format Support</h3>
-                            <p class="type-s">From documents and spreadsheets to images and PDFs — Floxtop handles them all. It recognizes what is inside an image and reads its text to classify files with precision.</p>
+                            <p class="type-s">From documents and spreadsheets to images and PDFs — Floxtop handles them all. It recognizes image content like dogs, buildings, or screenshots, and reads text inside to classify files with precision.</p>
                         </div>
-                        <img src="assets/fileicon_multifiles.webp" alt="Floxtop supports 35+ file formats including Word, Excel, PowerPoint, LibreOffice, PDF, images, and EPUB" class="img-fluid feature-card-image" loading="lazy">
+                        <img src="assets/fileicon_multifiles.webp" alt="Floxtop supports 30+ file formats including Word, Excel, PowerPoint, PDF, images, and EPUB" class="img-fluid feature-card-image" loading="lazy">
                    </div>
                 </div>
  
@@ -429,36 +390,22 @@
                     </div>
                 </div>
             </div>
-
-            <!-- Third row: 1 feature centered -->
-            <div class="row justify-content-center mb-1">
-                <div class="col-xxl-8 col-xl-10 col-md-12 mb-4">
-                    <div class="feature-card d-flex align-items-start">
-                        <div class="feature-card-content">
-                            <h3 class="type-s fw-bold mb-3 feature-card-green-text">Smart Rename</h3>
-                            <p class="type-s feature-card-green-text">Transform cryptic filenames into descriptive names based on file content.<br/>For example, "Screenshot 2026-01-31.png" becomes "Flight Tickets Confirmation.png" or "IMG_5847.jpg" becomes "Golden Gate Bridge Sunset.jpg".<br/>
-                            <br/><small class="text-muted">Requires macOS 26.0+ with Apple Intelligence enabled.</small></p>
-                        </div>
-                    </div>
-                </div>
-            </div>
             
-            <!-- Forth row: 1 feature centered -->
+            <!-- Third row: 1 feature centered -->
             <div class="row justify-content-center mb-1">
                 <div class="col-xxl-8 col-xl-10 col-md-12 mb-4">
                     <!-- green color #CAE4CA; #E0BEE6 rosa #DF9AB8 -->
                     <div class="feature-card d-flex align-items-start">
                         <div class="feature-card-content">
                             <h3 class="type-s fw-bold mb-3 feature-card-green-text">Full Control</h3>
-                            <p class="type-s feature-card-green-text">Create categories and describe what belongs in them. 
-                                For example: "Tax Documents — tax returns, receipts, invoices." Floxtop learns from your descriptions to organize files accurately.</p>
+                            <p class="type-s feature-card-green-text">Create, rename, and refine categories to match your workflow. Use built-in templates for a quick start and stay fully in charge of your organization.</p>
                         </div>
                         <img src="assets/feature-categories.webp" alt="Floxtop custom categories and templates for personalized file organization workflows" class="img-fluid feature-card-green-image" loading="lazy">
                     </div>
                 </div>
             </div>
  
-            <!-- Fifth row: 2 features -->
+            <!-- Forth row: 2 features -->
             <div class="row justify-content-center mb-1">
 
                 <div class="col-xxl-4 col-xl-5 col-md-6 mb-4">
@@ -480,151 +427,6 @@
                         </div>
                         <img src="assets/fileicon_privacy.webp" alt="Floxtop offline AI processing on Apple Silicon with complete privacy and security" class="img-fluid feature-card-image" loading="lazy">
                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Why Floxtop's AI Is Different -->
-    <section id="ai-difference" class="section-lightgray">
-        <div class="container">
-            <div class="row justify-content-center text-center mb-2">
-                <div class="col-lg-8">
-                    <p class="type-s fw-bold mb-4 text-uppercase">FLOXTOP AI</p>
-                    <h2 class="type-xl fw-bold">How Floxtop Understands Where Files Belong</h2>
-                    <p class="type-m">When you drop a file, Floxtop reads its content — text and images — and compares it with your category descriptions to determine where it belongs.
-                    </p>
-                </div>
-            </div>
-
-            <!-- Visual Animation -->
-            <div class="row justify-content-center mb-2">
-                <div class="col-lg-12">
-                    <div class="ai-process-visual">
-                        <!-- File -->
-                        <div class="process-step">
-                            <div class="process-title-container">
-                                <p class="process-title type-s mb-2 fw-bold">Extract meaning</p>
-                                <p class="process-title type-s mb-2">Text & images inside the file</p>
-                            </div>
-                            <div class="process-box file">
-                               <div class="content-block short">
-                                    <span class="segment highlight"></span>
-                                </div>
-                                <div class="content-block full"></div>
-                                <div class="content-block">
-                                    <span class="segment"></span>
-                                    <span class="segment highlight"></span>
-                                    <span class="segment"></span>
-                                </div>
-                                <div class="content-block">
-                                    <span class="segment"></span>
-                                    <span class="segment"></span>
-                                    <span class="segment highlight"></span>
-                                </div>
-                                <div class="content-block">
-                                    <span class="segment highlight"></span>
-                                    <span class="segment"></span>
-                                </div>
-                                
-                                <!-- Image Content -->
-                                <div class="image-content">
-                                    <svg viewBox="0 0 250 70" class="content-shapes" xmlns="http://www.w3.org/2000/svg">
-                                        <!-- Background -->
-                                        <rect width="250" height="70" rx="6" fill="#E8E8E8"/>
-                                        
-                                        <!-- Triangle (centered) -->
-                                        <path d="M 53 17.5 L 69.8 52.5 L 36.2 52.5 Z" 
-                                              fill="#8A5FF5" 
-                                              fill-opacity="0.9"/>
-                                        
-                                        <!-- Circle (centered) -->
-                                        <circle cx="125" cy="35" r="18.2" 
-                                                fill="#8A5FF5" 
-                                                fill-opacity="0.9"/>
-                                        
-                                        <!-- Square (centered) -->
-                                        <rect x="178.8" y="16.8" width="36.4" height="36.4" rx="2" 
-                                              fill="#8A5FF5" 
-                                              fill-opacity="0.9"/>
-                                    </svg>
-                                </div>
-                                
-                                <div class="content-block">
-                                    <span class="segment full"></span>
-                                </div>
- 
-                                <div class="content-block">
-                                    <span class="segment"></span>
-                                    <span class="segment highlight"></span>
-                                    <span class="segment"></span>
-                                </div>
-                               <div class="content-block">
-                                    <span class="segment highlight"></span>
-                                    <span class="segment"></span>
-                                    <span class="segment highlight"></span>
-                                </div>
-                                <div class="content-block">
-                                    <span class="segment"></span>
-                                    <span class="segment"></span>
-                                </div>
-                                <div class="content-block short">
-                                    <span class="segment highlight"></span>
-                                </div>
-                            </div> 
-                            <div class="file-name type-xs mt-2">GroceryShopping_31012026.pdf</div>
-                        </div>
-
-                        <!-- Arrow -->
-                        <div class="process-arrow">→</div>
-
-                        <!-- AI Cards (3 vertical) -->
-                        <div class="process-step">
-                            <div class="ai-cards-container">
-                            <div class="process-title-container">
-                                <p class="process-title type-s mb-2 fw-bold">Compare meaning with your<span class="title-break"><br/></span> category description</p>
-                                <p class="process-title type-s mb-2">Your descriptions of what belongs where</p>
-                            </div>
-                                <div class="process-box file ai-card-box">
-                                    <div class="ai-card-label type-xxs fw-bold">Taxes 2026</div>
-                                    <div class="content-block full"></div>
-                                    <div class="content-block full"></div>
-                                    <div class="ai-card-label type-xxs"><i class="bi bi-folder"></i> /Taxes/2026/</div> 
-                                </div>
-
-                                <div class="process-box file ai-card-box">
-                                    <div class="ai-card-label type-xxs">Receipts - Market</div>
-                                    <div class="content-block"><span class="segment highlight"></span></div>
-                                    <div class="content-block short"><span class="segment highlight"></span></div>
-                                    <div class="ai-card-label type-xxs"><i class="bi bi-folder"></i> /Market/</div>
-                                </div>
-
-                                <div class="process-box file ai-card-box">
-                                    <div class="ai-card-label type-xxs">Summer Trip</div>
-                                    <div class="content-block full"></div>
-                                    <div class="content-block short"></div>
-                                    <div class="ai-card-label type-xxs"><i class="bi bi-folder"></i> /Trips/Summer 26/</div>
-                                </div>
-                            </div>
-                            <div class="file-name type-xs mt-2">Moves to /Market/GroceryShopping_31012026.pdf</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Body Copy -->
-            <div class="row justify-content-center">
-                <div class="col-lg-8">
-                    <!--
-                    <p class="type-m text-center">
-                        Floxtop reads your file's content — text, images, everything inside — and compares it with your category descriptions. When it finds a match, it suggests where the file belongs.
-                    </p>
-                -->
-                    <p class="type-m text-center">
-                        The same file always produces the same result — no randomness, no guesswork.<br/>
-                        All of this happens on your Mac in milliseconds. No internet needed. No data sent anywhere. The AI model ships with the app, so it works offline from day one.
-
-                    </p>
                 </div>
             </div>
         </div>
@@ -686,50 +488,24 @@
     <!-- Testimonials -->
     <section id="testimonials" class="section-lightgray">
         <div class="container">
-            <div class="row justify-content-center text-center">
-                <div class="col-lg-10">
-                    <h3 class="type-m fw-bold">Users are praising Floxtop for its smart automation and ease of use.</h3>
+            <div class="row justify-content-center text-center mb-3">
+                <div class="col-lg-8">
+                    <h3 class="type-m fw-bold">Early users from the Hacker News community are already using Floxtop daily.</h3>
                 </div>
             </div>
             <div class="row justify-content-center mt-4">
-                <!-- Old testimonials - keeping for future use
                 <div class="col-xl-4 col-lg-5 col-md-6 mb-4">
                     <div class="socialproof-card">
-                        <span class="type-s">"I've tried everything from Hazel to custom scripts. Nothing handles organization as elegantly as Floxtop."</span>
+                        <span class="type-s">“I’ve tried everything from Hazel to custom scripts. Nothing handles organization as elegantly as Floxtop.”</span>
                         <br/>
                         <span class="type-s text-muted"><a class="text-muted" href="https://news.ycombinator.com/item?id=44932375">— Hacker News user</a></span>
                     </div>
                 </div>
                 <div class="col-xl-4 col-lg-5 col-md-6 mb-4">
                     <div class="socialproof-card">
-                        <span class="type-s">"I bought it immediately. This solves a problem I deal with every day."</span>
+                        <span class="type-s">“I bought it immediately. This solves a problem I deal with every day.”</span>
                         <br/>
                         <span class="type-s text-muted"><a class="text-muted" href="https://news.ycombinator.com/item?id=45420381">— Hacker News user</a></span>
-                    </div>
-                </div>
-                -->
-                
-                <!-- New testimonials -->
-                <div class="col-xl-5 col-lg-5 col-md-6 mb-4">
-                    <div class="socialproof-card">
-                        <div class="mb-2">
-            <small class="text-muted">Featured on iPhon.fr (France)</small>
-        </div>
-                        <span class="type-s">"Floxtop goes further than other file-organizing tools by analyzing the actual content of documents rather than relying on file names or extensions. By using on-device AI and OCR, it automatically organizes files more effectively — all while keeping your data private by running entirely locally."</span>
-                        <br/>
-                        <br/>
-                        <span class="type-s text-muted"><a class="text-muted" href="https://www.iphon.fr/post/floxtop-application-mac-menage" target="_blank" rel="noopener noreferrer">— iPhon.fr (France)</a></span>
-                    </div>
-                </div>
-                <div class="col-xl-5 col-lg-5 col-md-6 mb-4">
-                    <div class="socialproof-card">
-                        <div class="mb-2">
-            <small class="text-muted">Featured on AppAddict.com</small>
-        </div>
-                        <span class="type-s">"Floxtop offers a better solution than manual sorting or Hazel rules. It uses on-device AI to analyze files and group them into related subfolders instantly, saving me from creating manual rules. It recognizes both text and images and gives you a chance to review everything before applying changes. That balance between automation and control makes the results easy to trust."</span>
-                        <br/>
-                        <br/>
-                        <span class="type-s text-muted"><a class="text-muted" href="https://appaddict.app/post/some-useful-single-purpose-apps" target="_blank" rel="noopener noreferrer">— AppAddict.com</a></span>
                     </div>
                 </div>
             </div>
@@ -762,9 +538,8 @@
 
                         <div class="features-list free-features-spacing">
                             <div class="feature-item type-xs"><i class="bi bi-check-circle-fill" style="color:#7F7F7F;"></i> Handle 50 files per month</div>
-                            <div class="feature-item type-xs"><i class="bi bi-check-circle-fill"></i> Supports 35+ formats including Images, Word, Excel, PowerPoint, LibreOffice, PDF, EPUB, and RTF</div>
+                            <div class="feature-item type-xs"><i class="bi bi-check-circle-fill"></i> Supports 30+ formats including Images, Word, Excel, PowerPoint, PDF, EPUB, and RTF</div>
                             <div class="feature-item type-xs"><i class="bi bi-check-circle-fill"></i> Supports file classification in 50 languages. English, German, French, Spanish and more.</div>
-                            <div class="feature-item type-xs"><i class="bi bi-check-circle-fill"></i> Smart Rename — Suggests descriptive filenames based on content (e.g., "Screenshot 2026-01-31.png" → "Flight Tickets Confirmation.png"). Requires macOS 26.0+</div>
                             <div class="feature-item type-xs"><i class="bi bi-check-circle-fill"></i> Create your own custom classification system</div>
                             <div class="feature-item type-xs"><i class="bi bi-check-circle-fill"></i> Organize files and folders in cloud storage (iCloud Drive, Google Drive, OneDrive, Dropbox)</div>
                             <div class="feature-item type-xs"><i class="bi bi-check-circle-fill"></i> 100% private and fully offline</div>
@@ -800,9 +575,8 @@
 
                         <div class="features-list">
                             <div class="feature-item type-xs"><i class="bi bi-check-circle-fill"></i> Works with unlimited files</div>
-                            <div class="feature-item type-xs"><i class="bi bi-check-circle-fill"></i> Supports 35+ formats including Images, Word, Excel, PowerPoint, LibreOffice, PDF, EPUB, and RTF</div>
+                            <div class="feature-item type-xs"><i class="bi bi-check-circle-fill"></i> Supports 30+ formats including Images, Word, Excel, PowerPoint, PDF, EPUB, and RTF</div>
                             <div class="feature-item type-xs"><i class="bi bi-check-circle-fill"></i> Supports file classification in 50 languages. English, German, French, Spanish and more.</div>
-                            <div class="feature-item type-xs"><i class="bi bi-check-circle-fill"></i> Smart Rename — Suggests descriptive filenames based on content (e.g., "Screenshot 2026-01-31.png" → "Flight Tickets Confirmation.png"). Requires macOS 26.0+</div>
                             <div class="feature-item type-xs"><i class="bi bi-check-circle-fill"></i> Create your own custom classification system</div>
                             <div class="feature-item type-xs"><i class="bi bi-check-circle-fill"></i> Organize files and folders in cloud storage (iCloud Drive, Google Drive, OneDrive, Dropbox)</div>
                             <div class="feature-item type-xs"><i class="bi bi-check-circle-fill"></i> 100% private and fully offline</div>
@@ -840,41 +614,15 @@
                                 <img src="assets/whatsnew-icon.png" alt="Floxtop app icon for latest updates and new features" class="whatsnew-icon" loading="lazy">
                                 <div class="header-content">
                                     <h4 class="version-title fw-bold type-m">Latest Release</h4>
-                                    <h5 class="type-m">Version 1.9.0</h5>
+                                    <h5 class="type-m">Version 1.5.0</h5>
                                 </div>
                             </div>
                             <div class="card-content mb-4">
                                 <div class="features-list">
-                                    <div class="feature-item type-xs">
-                                        <i class="bi bi-check-circle-fill"></i>
-                                        <span><strong>Multi-Select & Bulk Actions</strong> — Select multiple files and move, undo, or organize them all at once.</span>
-                                    </div>
-
-                                    <div class="feature-item type-xs">
-                                        <i class="bi bi-check-circle-fill"></i>
-                                        <span><strong>Smarter Group Suggestions</strong> — Floxtop now finds the best category for multiple files together, not just one by one.</span>
-                                    </div>
-
-                                    <div class="feature-item type-xs">
-                                        <i class="bi bi-check-circle-fill"></i>
-                                        <span><strong>Preview Extracted Content</strong> — See exactly what's taken from your files for classification.</span>
-                                    </div>
-
-                                    <div class="feature-item type-xs">
-                                        <i class="bi bi-check-circle-fill"></i>
-                                        <span><strong>More Trustworthy Confidence</strong> — Clearer, more realistic percentages you can rely on.</span>
-                                    </div>
-
-                                    <div class="feature-item type-xs">
-                                        <i class="bi bi-check-circle-fill"></i>
-                                        <span><strong>Alphabetical File Sorting</strong> — Files are now sorted A-Z for easier scanning.</span>
-                                    </div>
-
-                                    <div class="feature-item type-xs">
-                                        <i class="bi bi-check-circle-fill"></i>
-                                        <span><strong>Cleaner Interface & Shortcuts</strong> — Less visual noise with faster keyboard navigation.</span>
-                                    </div>
-                                </div>
+                                    <div class="feature-item type-xs"><i class="bi bi-check-circle-fill"></i><span><strong>Dock Integration</strong> — Drag and drop files directly onto the Floxtop icon in your Dock to start classifying instantly — no need to open the app first.</span></div>
+                                    <div class="feature-item type-xs"><i class="bi bi-check-circle-fill"></i><span><strong>Quick Category Access</strong> — When manually selecting a destination folder, your custom categories now appear as shortcuts in the file picker, making it faster to find the right folder for your files.</span></div>
+                                    <div class="feature-item type-xs"><i class="bi bi-check-circle-fill"></i><span><strong>macOS 26 Tahoe Support</strong> — Fully optimized for macOS 26 Tahoe with a refined, simplified design that feels perfectly liquilized on your Mac.</span></div>
+                               </div>
                             </div>
                         </div>
 
@@ -914,25 +662,6 @@
                             </div>
                         </div>
                         
-                        <div class="accordion-item">
-                            <h2 class="accordion-header" id="headingAIRename">
-                                <button class="accordion-button type-xs collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseAIRename" aria-expanded="false" aria-controls="collapseAIRename">
-                                   How does Smart Rename work?
-                                </button>
-                            </h2>
-                            <div id="collapseAIRename" class="accordion-collapse collapse" aria-labelledby="headingAIRename" data-bs-parent="#accordionFAQ">
-                                <div class="accordion-body type-xs">
-                                    Smart Rename analyzes your file's content and suggests clear, descriptive filenames. For example, "Screenshot 2026-01-31.png" becomes "Flight Tickets Confirmation.png", "IMG_5847.jpg" becomes "Golden Gate Bridge Sunset.jpg", or "Untitled.pdf" becomes "Q4 Sales Report 2026.pdf".<br/><br/>
-                                    
-                                    <strong>Requirements:</strong><br/>
-                                    • macOS 26.0 or later<br/>
-                                    • Apple Intelligence enabled (System Settings → Apple Intelligence & Siri)<br/><br/>
-                                    
-                                    Everything runs on your Mac—no data ever leaves your device. If your Mac doesn't meet these requirements, you can still use all other Floxtop features normally.
-                                </div>
-                            </div>
-                        </div>
-
                         <div class="accordion-item">
                             <h2 class="accordion-header" id="headingTwo">
                                 <button class="accordion-button type-xs collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
@@ -983,13 +712,13 @@
                             <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionFAQ">
                                 <div class="accordion-body type-xs">
                                     <strong>File Types:</strong> Floxtop works with all file types. Supported formats are classified by content analysis, while other files are classified by filename.<br/><br/>
-                                    <strong>Content-analyzed formats (35+):</strong><br/>
-                                    <strong>Documents:</strong> TXT, PDF, MD (Markdown), RTF, HTML, EPUB, DOC, DOCX, ODT<br/>
-                                    <strong>Spreadsheets:</strong> CSV, TSV, XLSX, XLSM, XLTX, XLTM, ODS<br/>
-                                    <strong>Presentations:</strong> PPTX, PPTM, POTX, POTM, ODP<br/>
-                                    <strong>Drawings & Formulas:</strong> ODG, ODF<br/>
+                                    <strong>Content-analyzed formats (30+):</strong><br/>
+                                    <strong>Documents:</strong> TXT, PDF, MD (Markdown), RTF, HTML, EPUB, DOC, DOCX<br/>
+                                    <strong>Spreadsheets:</strong> CSV, TSV, XLSX, XLSM, XLTX, XLTM<br/>
+                                    <strong>Presentations:</strong> PPTX, PPTM, POTX, POTM<br/>
                                     <strong>Data & Config:</strong> JSON, XML, YAML, TOML, INI, CONF, LOG<br/>
                                     <strong>Images:</strong> PNG, JPG, JPEG, HEIC, HEIF, TIFF, TIF, BMP, WEBP<br/>
+                                    <strong>Archives:</strong> ZIP<br/><br/>
                                     All other file types are classified based on their filename. All processing happens locally on your Mac with OCR support for images.<br/><br/>
                                     <strong>Languages:</strong> Floxtop supports 50 languages including English, Spanish, French, German, Italian, Portuguese, Dutch, Swedish, Norwegian, Danish, Finnish, Polish, Czech, Romanian, Hungarian, Croatian, Bulgarian, Serbian, Slovak, Slovenian, Greek, Russian, Ukrainian, Turkish, Estonian, Latvian, Lithuanian, Macedonian, Albanian, Catalan, Galician, Japanese, Korean, Vietnamese, Thai, Indonesian, Malay, Burmese, Mongolian, Arabic, Hebrew, Persian, Urdu, Hindi, Gujarati, Marathi, Georgian, Armenian, and Kurdish. Download the multilingual model in Settings to enable support for all languages.
                                 </div>
@@ -1072,19 +801,6 @@
                         </div>
 
                         <div class="accordion-item">
-                            <h2 class="accordion-header" id="headingLicense">
-                                <button class="accordion-button type-xs collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseLicense" aria-expanded="false" aria-controls="collapseLicense">
-                                   How many Macs can I use with one license?
-                                </button>
-                            </h2>
-                            <div id="collapseLicense" class="accordion-collapse collapse" aria-labelledby="headingLicense" data-bs-parent="#accordionFAQ">
-                                <div class="accordion-body type-xs">
-                                    Each license covers one Mac, not one user. So if you want Floxtop on 3 different Macs, you'll need 3 licenses. We offer multi-license packs with significant discounts. The number of licenses can be selected directly from the <a href="#pricing" class="text-dark">pricing section</a>.
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="accordion-item">
                             <h2 class="accordion-header" id="headingSeven">
                                 <button class="accordion-button type-xs collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
                                    How can I get a refund?
@@ -1114,7 +830,7 @@
                     </p>
 
                     <p class="type-m mb-4">
-                    Unlike traditional file management apps for macOS, Floxtop doesn't just sort files by name or file type—it understands what your files contain. Using local AI, it analyzes content in multiple languages and categorizes everything from tax documents to vacation photos with high accuracy. Floxtop can also intelligently rename files based on their content, turning cryptic names like "Screenshot 2026-01-31.png" into "Flight Tickets Confirmation.png" or "IMG_1234.jpg" into "Golden Gate Bridge Sunset.jpg". Organize content stored locally or in cloud drives like iCloud Drive, Google Drive, OneDrive, Dropbox, external drives, and network shares.
+                    Unlike traditional file management apps for macOS, Floxtop doesn’t just sort files by name or file type — it understands what your files contain. Using local AI, it analyzes content in multiple languages and categorizes everything from tax documents to vacation photos with high accuracy. You can organize files stored locally or in cloud drives like iCloud Drive, Google Drive, OneDrive, Dropbox, external drives, and network shares.
                     </p>
 
                     <p class="type-m">

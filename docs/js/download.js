@@ -36,7 +36,7 @@ document.addEventListener("DOMContentLoaded", async () => {
       // Update UI
       statusEl.textContent = "Your payment was verified!";
       downloadLink.href = url;
-      downloadLink.download = "Floxtop-v1.8.0.zip";
+      downloadLink.download = "Floxtop-v1.9.0.zip";
       downloadLink.style.display = "inline-block";
       downloadLink.textContent = "Download Floxtop";
       
