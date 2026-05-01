@@ -95,6 +95,37 @@
                         <p class="type-m">See what's new in each Floxtop release. Every update brings improvements based on your feedback.</p>
                     </div>
 
+                    <!-- Version 1.10.0 -->
+                    <div class="changelog-version mb-5">
+                        <div class="version-header mb-4">
+                            <h2 class="version-title type-l">Version 1.10.0</h2>
+                        </div>
+
+                        <div class="version-content">
+                            <h4 class="change-category type-s">New Features</h4>
+                            <ul class="change-list">
+                                <li><strong>Trash Support:</strong> Move files to Trash with full undo via "Restore from Trash". Available for single and multi-select actions.</li>
+                                <li><strong>Context Menu Actions:</strong> Added per-file context menu (right-click floating menu) with Skip, Trash, and Restore from Trash.</li>
+                                <li><strong>Inline File Rename:</strong> Rename files directly in the list (double-click or context menu) with input sanitization, undo support, and escape-to-cancel.</li>
+                                <li><strong>Bulk Trash Action:</strong> "Move Selected to Trash" available in multi-select toolbar.</li>
+                            </ul>
+
+                            <h4 class="change-category type-s">Enhancements</h4>
+                            <ul class="change-list">
+                                <li><strong>Swipe Action Update:</strong> Swipe now defaults to Trash instead of Skip. Skip is now keyboard-only (X, two-stage).</li>
+                                <li><strong>Category Creation UX:</strong> Redesigned to guide category input with example content, improved copy, and warnings for overly verbose descriptions.</li>
+                                <li><strong>Free Version Limit:</strong> Increased from 50 to 100 files per month.</li>
+                                <li><strong>Status Messaging:</strong> Removed unnecessary move and undo confirmation text for a cleaner UI.</li>
+                            </ul>
+
+                            <h4 class="change-category type-s">Bug Fixes</h4>
+                            <ul class="change-list">
+                                <li><strong>Bulk Undo Visibility:</strong> Undo controls now appear correctly after partial move operations.</li>
+                                <li><strong>Unreadable File Handling:</strong> Files that are not accessible (e.g. cloud drives, locked, or permission-restricted) are now detected before classification and show a clear error instead of failing silently.</li>
+                            </ul>
+                        </div>
+                    </div>
+
                     <!-- Version 1.9.0 -->
                     <div class="changelog-version mb-5">
                         <div class="version-header mb-4">
@@ -452,7 +483,6 @@
                             <ul class="change-list">
                                 <li><strong>Instant classification on Apple Silicon:</strong> Now powered by ONNX Runtime, file classification runs almost instantly compared to the previous 1.2 seconds per file.</li>
                                 <li><strong>Seamless updates:</strong> Over-the-Air (OTA) update support added, so future versions can be installed directly in the app.</li>
-                                <li><strong>Bigger batch processing:</strong> Process up to 150 files at once, tripling the previous 50-file limit.</li>
                             </ul>
 
                             <h4 class="change-category type-s">Enhancements</h4>
