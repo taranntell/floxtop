@@ -7,7 +7,7 @@
  *
  * TYPE CLASSES (Desktop Sizes - Base: type-m = 20px):
  * ────────────────────────────────────────────────────
- * .type-xl    60px   Weight: 700  Line-height: 1.2  → Hero titles, main page headers
+ * .type-xl    48px   Weight: 700  Line-height: 1.2  → Hero titles, main page headers
  * .type-l     35px   Weight: 600  Line-height: 1.3  → Section headers, emphasis
  * .type-m     20px   Weight: 400  Line-height: 1.6  → Body copy, paragraphs, feature lists
  * .type-s     18.75px Weight: 500 Line-height: 1.5  → Subtitles, labels, section intros
@@ -16,10 +16,10 @@
  * MOBILE BREAKPOINTS (Scaled Proportionally):
  * ────────────────────────────────────────────
  * 768px and below:
- *   .type-xl: 50px   .type-l: 30px   .type-m: 17px   .type-s: 17.5px   .type-xs: 13.5px
+ *   .type-xl: 40px   .type-l: 30px   .type-m: 17px   .type-s: 17.5px   .type-xs: 13.5px
  *
  * 576px and below:
- *   .type-xl: 40px   .type-l: 26px   .type-m: 16px   .type-s: 15.5px   .type-xs: 13px
+ *   .type-xl: 32px   .type-l: 26px   .type-m: 16px   .type-s: 15.5px   .type-xs: 13px
  *
  * USAGE GUIDELINES:
  * ─────────────────
@@ -598,9 +598,9 @@ body.has-navbar {
 
 /* Typography System - 5 Type Classes for Consistency */
 
-/* .type-xl: Hero titles, section headers | 60px | Weight: 700 | Line Height: 1.2 */
+/* .type-xl: Hero titles, section headers | 48px | Weight: 700 | Line Height: 1.2 */
 .type-xl {
-    font-size: 3.75rem;
+    font-size: 3rem;
     font-weight: 700;
     line-height: 1.2;
     letter-spacing: -0.02em;
@@ -829,8 +829,8 @@ body.has-navbar {
 @media (max-width: 768px) {
     /* Adjust type classes for tablet/mobile (scaled proportionally from base) */
     .type-xl {
-        font-size: 3.125rem;
-        /* 50px - scaled from 60px */
+        font-size: 2.5rem;
+        /* 40px - scaled from 48px */
     }
 
     .type-l {
@@ -908,8 +908,8 @@ body.has-navbar {
 
     /* Extra small screens (scaled proportionally from base) */
     .type-xl {
-        font-size: 2.5rem;
-        /* 40px - scaled from 60px */
+        font-size: 2rem;
+        /* 32px - scaled from 48px */
         line-height: 1.1;
     }
 
