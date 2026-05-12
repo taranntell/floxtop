@@ -1208,9 +1208,6 @@ a.whatsnew-link:visited {
     width: auto;
     max-width: 100%;
     display: block;
-    -webkit-border-radius: 30px;
-    border-radius: 30px;
-    border: 1px solid #cccccc;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
     margin: 0 auto;
