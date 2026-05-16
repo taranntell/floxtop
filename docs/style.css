@@ -856,9 +856,24 @@ body.has-navbar {
 }
 
 @media (max-width: 576px) {
-    /* Hero image - mobile adjustments */
-    .hero-image {
-        max-height: 300px;
+    /* Hero image — wider than viewport, overflows right on mobile (same technique as reference) */
+    #hero {
+        overflow: hidden;
+    }
+
+    #hero picture {
+        display: block;
+        position: relative;
+        height: calc((100vw + 180px) * 0.608847); /* 0.608847 = 3588/5892, hero.webp aspect ratio */
+    }
+
+    #hero .hero-image {
+        position: absolute;
+        width: calc(100vw + 180px); /* 180px = visual right-overflow offset */
+        height: auto;
+        max-width: none;
+        max-height: none;
+        left: 0;
     }
 
     /* Feature cards - reduce padding on very small screens */
