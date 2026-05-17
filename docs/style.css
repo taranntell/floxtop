@@ -784,12 +784,12 @@ body.has-navbar {
 
 /* Small displays - single column cards (below tablet, above mobile) */
 @media (max-width: 767px) and (min-width: 576px) {
-    /* Feature card images - use original size when cards stack to single column */
+    /* Feature card images - slightly smaller when cards stack to single column */
     #features .feature-card-image {
-        height: 130px;
-        max-height: 130px;
+        height: 110px;
+        max-height: 110px;
         max-width: 300px;
-        padding: 0 30px 30px 30px;
+        padding: 0 25px 22px 25px;
         object-position: left center;
         align-self: flex-start;
         margin-right: auto;
@@ -890,19 +890,18 @@ body.has-navbar {
         padding: 15px;
     }
 
-    /* Feature card images - keep height large on very small screens for wide icons */
-    /* Reduce margin-top to minimize gap between text and image */
+    /* Feature card images - scaled down for small phone screens */
     #features .feature-card-image {
-        height: 130px;
-        max-height: 130px;
+        height: 86px;
+        max-height: 86px;
         max-width: 100%;
-        padding: 0 15px 15px 15px;
+        padding: 0 15px 14px 15px;
         object-fit: contain;
         -o-object-fit: contain;
         object-position: left center;
         align-self: flex-start;
         margin-right: auto;
-        margin-top: 10px;
+        margin-top: 8px;
     }
 
     /* Green feature card - hide image and make layout match other cards */
