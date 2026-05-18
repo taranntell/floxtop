@@ -1231,6 +1231,12 @@ a.whatsnew-link:visited {
 }
 
 /* Category selector styles */
+.feature-card hr {
+    width: 100%;
+    border-color: var(--color-gray-medium);
+    opacity: 1;
+}
+
 .category-path-container {
     gap: 8px;
 }
@@ -1252,7 +1258,7 @@ span.category-path-arrow,
     background-color: rgba(0, 0, 0, 0.05);
     border: 1px solid transparent;
     border-radius: var(--radius-sm);
-    padding: 4px 8px;
+    padding: 5px 10px;
     display: flex;
     align-items: center;
     cursor: pointer;
@@ -1274,8 +1280,9 @@ span.category-path-arrow,
 
 .category-button-text {
     color: var(--color-black);
-    font-size: 12px;
-    line-height: 1;
+    font-size: 0.9375rem;
+    font-weight: 500;
+    line-height: 1.4;
 }
 
 .category-button.active .category-button-text {
