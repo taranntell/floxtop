@@ -247,7 +247,7 @@ body.has-navbar {
 .section-black {
     background-color: var(--color-black);
     padding: var(--spacing-section) 0;
-    min-height: relative;
+    min-height: auto;
     display: flex;
     align-items: center;
     position: relative;
@@ -256,7 +256,7 @@ body.has-navbar {
 .section-white {
     background-color: var(--color-white);
     padding: var(--spacing-section) 0;
-    min-height: relative;
+    min-height: auto;
     display: flex;
     align-items: center;
     position: relative;
@@ -288,7 +288,7 @@ body.has-navbar {
 .section-lightgray {
     background-color: var(--color-gray-light);
     padding: var(--spacing-section) 0;
-    min-height: relative;
+    min-height: auto;
     display: flex;
     align-items: center;
     position: relative;
@@ -563,7 +563,7 @@ body.has-navbar {
 #hero {
     background-color: var(--color-white);
     padding: var(--spacing-section) 0;
-    min-height: relative;
+    min-height: auto;
     display: flex;
     align-items: center;
     position: relative;
@@ -581,7 +581,7 @@ body.has-navbar {
 .section-darker {
     background-color: var(--color-gray-darker);
     padding: var(--spacing-section) 0;
-    min-height: relative;
+    min-height: auto;
     display: flex;
     align-items: center;
     position: relative;
@@ -590,7 +590,7 @@ body.has-navbar {
 .section-dark {
     background-color: var(--color-gray-darkest);
     padding: var(--spacing-section) 0;
-    min-height: relative;
+    min-height: auto;
     display: flex;
     align-items: center;
     position: relative;
