@@ -864,7 +864,7 @@ body.has-navbar {
     #hero picture {
         display: block;
         position: relative;
-        height: calc((100vw + 180px) * 0.608847); /* 0.608847 = 3588/5892, hero.webp aspect ratio */
+        height: calc((100vw + 180px) * 0.625); /* 2400/3840, hero.webp aspect ratio */
     }
 
     #hero .hero-image {
@@ -1225,6 +1225,7 @@ a.whatsnew-link:visited {
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
     margin: 0 auto;
+    /*box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);*/
     /* Safari-specific image rendering */
     image-rendering: -webkit-optimize-contrast;
     image-rendering: crisp-edges;
