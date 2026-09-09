@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="canonical" href="https://floxtop.com/changelog.html">
-    <title>Floxtop Changelog v1.17.0 — Workflows, Play Mode, and Updates</title>
+    <title>Floxtop Changelog v1.18.0 — Easier Undo, Workflows, and AI Rename</title>
     <meta name="theme-color" content="#ffffff">
     <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
@@ -12,19 +12,19 @@
     <link rel="stylesheet" href="style.css">
     <link rel="preload" href="assets/logo.png" as="image">
 
-    <meta name="description" content="Floxtop Changelog — See version 1.17.0 with Workflows, Workflows Gallery, Play Mode, clearer test feedback, and workflow editing improvements.">
-    <meta property="og:title" content="Floxtop Changelog v1.17.0 — Workflows, Play Mode, and Updates">
-    <meta property="og:description" content="See what's new in Floxtop 1.17.0 with a redesigned Workflows editor, Workflows Gallery, Play Mode testing, clearer test feedback, and reliability improvements.">
+    <meta name="description" content="Floxtop Changelog — See what's new in version 1.18.0 with easier undo, workflow suggestions, improved testing, and more reliable AI Rename.">
+    <meta property="og:title" content="Floxtop Changelog v1.18.0 — Easier Undo, Workflows, and AI Rename">
+    <meta property="og:description" content="See what's new in Floxtop 1.18.0 with easier undo, workflow suggestions, improved testing, and more reliable AI Rename.">
     <meta property="og:image" content="https://floxtop.com/assets/og-image.png">
     <meta property="og:type" content="article">
     <meta property="og:url" content="https://floxtop.com/changelog.html">
     <meta property="og:locale" content="en_US">
     <meta property="og:site_name" content="Floxtop">
-    <meta property="og:updated_time" content="2026-08-26T00:00:00Z">
-    <meta property="article:modified_time" content="2026-08-26T00:00:00Z">
+    <meta property="og:updated_time" content="2026-09-09T00:00:00Z">
+    <meta property="article:modified_time" content="2026-09-09T00:00:00Z">
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Floxtop Changelog v1.17.0 — Workflows, Play Mode, and Updates">
-    <meta name="twitter:description" content="See what's new in Floxtop 1.17.0 with a redesigned Workflows editor, Workflows Gallery, Play Mode testing, clearer test feedback, and reliability improvements.">
+    <meta name="twitter:title" content="Floxtop Changelog v1.18.0 — Easier Undo, Workflows, and AI Rename">
+    <meta name="twitter:description" content="See what's new in Floxtop 1.18.0 with easier undo, workflow suggestions, improved testing, and more reliable AI Rename.">
     <meta name="twitter:image" content="https://floxtop.com/assets/og-image.png">
     
     <!-- Apple Touch Icons -->
@@ -106,6 +106,30 @@
                         <!--<img src="assets/whatsnew-icon.png" alt="Changelog" class="mb-3" style="width: 80px; height: 80px;">-->
                         <h1 class="type-xl fw-bold">What's New in Floxtop</h1>
                         <p class="type-m">See what's new in each Floxtop release. Every update brings improvements based on your feedback.</p>
+                    </div>
+
+                    <!-- Version 1.18.0 -->
+                    <div class="changelog-version mb-5">
+                        <div class="version-header mb-4">
+                            <h2 class="version-title type-l">Version 1.18.0</h2>
+                        </div>
+
+                        <div class="version-content">
+                            <h4 class="change-category type-s">New Features</h4>
+                            <ul class="change-list">
+                                <li><strong>Easy Undo:</strong> Press Cmd+Z to undo your latest file move. Moves made together are undone together.</li>
+                                <li><strong>Workflows from Suggestions:</strong> Choose a different destination or create a new workflow directly from a suggestion, then test the selected file right away.</li>
+                                <li><strong>Test Workflows Again:</strong> Reload the last test result to try the same file again without choosing it again.</li>
+                            </ul>
+
+                            <h4 class="change-category type-s">Improvements</h4>
+                            <ul class="change-list">
+                                <li><strong>More Reliable AI Rename:</strong> Rename suggestions and progress stay visible while browsing large file lists.</li>
+                                <li><strong>Safer Renaming:</strong> Better handling for duplicate names, invalid names, missing files, and interrupted renames.</li>
+                                <li><strong>Cleaner Workflows:</strong> Empty workflows are no longer saved when you close the editor without making changes.</li>
+                                <li><strong>Fewer Unnecessary Refreshes:</strong> Workflow suggestions refresh only when learning settings change.</li>
+                            </ul>
+                        </div>
                     </div>
 
                     <!-- Version 1.17.0 -->
