@@ -17,7 +17,7 @@
     <meta property="og:url" content="https://floxtop.com/">
     <meta property="og:locale" content="en_US">
     <meta property="og:site_name" content="Floxtop">
-    <meta property="og:updated_time" content="2026-10-17T00:00:00Z">
+    <meta property="og:updated_time" content="2026-11-23T00:00:00Z">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Floxtop - AI File Organizer for Mac">
     <meta name="twitter:description" content="Organize and rename files on Mac with private, offline AI. Add workflow clues for more helpful suggestions.">
@@ -51,8 +51,21 @@
     "name": "Floxtop",
     "applicationCategory": "UtilitiesApplication",
     "operatingSystem": "macOS 15+",
-    "softwareVersion": "1.24.0",
-    "dateModified": "2026-10-26",
+    "softwareVersion": "1.25.0",
+    "dateModified": "2026-11-23",
+    "applicationSubCategory": "File Organizer",
+    "downloadUrl": "https://github.com/taranntell/floxtop/releases/download/1.25.0/Floxtop-v1.25.0-demo.zip",
+    "featureList": [
+        "Organizes files by reading their content, including text inside images and scanned documents",
+        "Suggests clear filenames with Smart Rename and custom rename rules",
+        "Moves whole folders, with Command-Z undo",
+        "Keep Both or Replace when a file with the same name already exists",
+        "Reads receipts and invoices, including totals, dates, and table details",
+        "Understands spoken content in audio and video files",
+        "Works with iCloud Drive, Google Drive, OneDrive, Dropbox, external drives, and network shares",
+        "Supports 50 languages",
+        "Runs on-device and offline, with no uploads"
+    ],
     "releaseNotes": "https://floxtop.com/changelog.html",
     "url": "https://floxtop.com/",
     "image": "https://floxtop.com/assets/og-image.png",
@@ -330,7 +343,7 @@
                 <div class="container">
                     <div class="row justify-content-center mt-4">
                         <div class="col-lg-8 text-center">
-                            <a href="https://github.com/taranntell/floxtop/releases/download/1.24.0/Floxtop-v1.24.0-demo.zip" target="_blank" rel="noopener noreferrer" class="btn btn-purple-pill btn-lg">Download Free</a>
+                            <a href="https://github.com/taranntell/floxtop/releases/download/1.25.0/Floxtop-v1.25.0-demo.zip" target="_blank" rel="noopener noreferrer" class="btn btn-purple-pill btn-lg">Download Free</a>
                             <p class="type-xs text-muted mt-3">Requires macOS 15+ with Apple Silicon.</p>
                         </div>
                     </div>
@@ -771,7 +784,7 @@
                         </div>                       
                         <p class="small mt-2 pricing-text-dark">Requires macOS 15+ with Apple Silicon.</p>
                         <div class="download-section">
-                            <a type="button" class="btn btn-presale btn-lg" href="https://github.com/taranntell/floxtop/releases/download/1.24.0/Floxtop-v1.24.0-demo.zip">Download Free</a>
+                            <a type="button" class="btn btn-presale btn-lg" href="https://github.com/taranntell/floxtop/releases/download/1.25.0/Floxtop-v1.25.0-demo.zip">Download Free</a>
                        </div>
                     </div>
                 </div>
@@ -840,22 +853,26 @@
                                 <img src="assets/whatsnew-icon.png" alt="Floxtop app icon for latest updates and new features" class="whatsnew-icon" loading="lazy">
                                 <div class="header-content">
                                     <h4 class="version-title fw-bold type-m">Latest Release</h4>
-                                    <h5 class="type-m">Version 1.24.0</h5>
+                                    <h5 class="type-m">Version 1.25.0</h5>
                                 </div>
                             </div>
                             <div class="card-content mb-4">
                                 <div class="features-list">
                                     <div class="feature-item type-xs">
                                         <i class="bi bi-check-circle-fill"></i>
-                                        <span><strong>Custom Rename Rules:</strong> Choose how dates, company names, document types, and topics appear in filenames, with flexible formats, separators, and interactive previews.</span>
+                                        <span><strong>Better Folder Organization:</strong> Drop a whole folder and sort its contents when you're ready. Folders move safely, and Command-Z brings them back.</span>
                                     </div>
                                     <div class="feature-item type-xs">
                                         <i class="bi bi-check-circle-fill"></i>
-                                        <span><strong>In-Place Renaming with Full Undo:</strong> Apply a suggested name without moving the file, then undo single or batch renames with Command-Z.</span>
+                                        <span><strong>Duplicate Handling:</strong> When a file with the same name already exists, choose Keep Both or Replace. Replacing can be undone.</span>
                                     </div>
                                     <div class="feature-item type-xs">
                                         <i class="bi bi-check-circle-fill"></i>
-                                        <span><strong>Refined Experience:</strong> Native translucent editor canvases, smoother layouts on narrow windows, and faster startup.</span>
+                                        <span><strong>More Accurate Receipt Reading:</strong> Fine print, tables, totals, and dates are picked up more reliably, so files land in the right workflow.</span>
+                                    </div>
+                                    <div class="feature-item type-xs">
+                                        <i class="bi bi-check-circle-fill"></i>
+                                        <span><strong>Faster File Drops:</strong> Importing hundreds of files and folders at once is quicker, and the app stays responsive.</span>
                                     </div>
                                 </div>
                             </div>
@@ -1102,11 +1119,15 @@
                     </p>
 
                     <p class="type-m mb-4">
-                    Unlike traditional file management apps for macOS, Floxtop doesn't just sort files by name or file type, it understands what your files contain. Using local AI, it analyzes content in multiple languages and spoken content in supported audio and video files, categorizing everything from tax documents to vacation photos and podcasts with high accuracy. Floxtop can also intelligently rename files based on their content, turning cryptic names like "Screenshot 2026-01-31.png" into "Flight Tickets Confirmation.png". Organize content stored locally or in cloud drives like iCloud Drive, Google Drive, OneDrive, Dropbox, external drives, and network shares.
+                    Unlike traditional file management apps for macOS, Floxtop doesn't just sort files by name or file type, it understands what your files contain. Using local AI, it analyzes content in multiple languages and spoken content in supported audio and video files, categorizing everything from tax documents to vacation photos and podcasts with high accuracy. Floxtop can also intelligently rename files based on their content, turning cryptic names like "Screenshot 2026-01-31.png" into "Flight Tickets Confirmation.png". Organize content stored locally or in cloud drives like iCloud Drive, Google Drive, OneDrive, Dropbox, external drives, and network shares. 
                     </p>
 
                     <p class="type-m">
                     Whether you’re organizing English documents, Spanish recibos, German Rechnungen, French factures, Japanese reports, or Hindi contracts, Floxtop understands them all. Automatically create custom organization folders in your native language and apply them across local folders and cloud storage alike. All processing happens directly on your Mac, keeping your files fully private and under your control.
+                    </p>
+
+                    <p class="type-m">
+                    You stay in control and can review everything before moving files.
                     </p>
                 </div>
             </div>
